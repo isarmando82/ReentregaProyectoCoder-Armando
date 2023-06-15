@@ -1,6 +1,7 @@
-﻿# Heading Proyecto Final React - Armando Ismael
+﻿# Heading Reentrega Proyecto Final React - Armando Ismael
 El presente proyecto está hecho en base a lo dado en las clases de CoderHouse dictadas por el profesor Pablo Moraga, el material complementario de google drive, los pps y mucho buscar en la red tanto googlear, visitar stackflow, videos de youtube y el material del MDN de Firefox, entres otros.
 Si bien tuve un muy buen comienzo me encontré con problemas al implementar Firebase en el proyecto, pero gracias a estar sentado aprendiendo y la ayuda de los tutores de coderASK logro encontrar tanto la problemática como las vueltas de tuerca que deseaba darle al proyecto que no deja de ser un E-COMMERCE.
+La reentrega se encuentra alojada en: [ReentregaProyectoReact-Armando](https://reentrega-proyecto-coder-armando.vercel.app/) 
 
 ## Composición / Componentes.
 	
