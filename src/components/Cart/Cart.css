@@ -1,0 +1,26 @@
+.nn {
+    text-decoration: none;
+    color: black;  
+}
+
+.cent {
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+    color: brown;
+    }
+
+.b {
+    display: flex;
+    justify-content: space-around;    
+}
+
+.m {
+    margin: 100px;
+    margin-left: 1000px;
+    
+}
+
+.l {
+    border-radius: 15px;
+}
