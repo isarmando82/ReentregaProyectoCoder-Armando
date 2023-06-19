@@ -14,7 +14,16 @@ const CheckoutForm = ({ onCheckout, cart }) => {
   };
 
   const handlePhoneNumberChange = (e) => {
-    setPhoneNumber(e.target.value);
+    const value = e.target.value;
+    if (isNaN(value)) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        text: 'El número de celular debe contener solo dígitos numéricos',
+      });
+    } else {
+      setPhoneNumber(value);
+    }
   };
 
   const handleEmailChange = (e) => {
@@ -35,7 +44,6 @@ const CheckoutForm = ({ onCheckout, cart }) => {
       return;
     }
 
-    // Validar campos requeridos
     if (!name || !phoneNumber || !email || !confirmEmail) {
       toast.error('Por favor, completa todos los campos requeridos');
       return;
@@ -59,24 +67,24 @@ const CheckoutForm = ({ onCheckout, cart }) => {
   return (
     <div>
       <ToastContainer />
-      <form className='m-4'>
+      <form className="m-4">
         <div>
-          <label className='m-3'>Nombre y Apellido:</label>
+          <label className="m-3">Nombre y Apellido:</label>
           <input required type="text" value={name} onChange={handleNameChange} />
         </div>
         <div>
-          <label className='m-3'>Numero de Celular:</label>
-          <input type="numbers" value={phoneNumber} required onChange={handlePhoneNumberChange} />
+          <label className="m-3">Numero de Celular:</label>
+          <input type="tel" pattern="[0-9]+" value={phoneNumber} required onChange={handlePhoneNumberChange} />
         </div>
         <div>
-          <label className='m-3'>Correo Electronico:</label>
+          <label className="m-3">Correo Electronico:</label>
           <input type="email" value={email} required onChange={handleEmailChange} />
         </div>
         <div>
-          <label className='m-3'>Confirmar Correo Electronico:</label>
+          <label className="m-3">Confirmar Correo Electronico:</label>
           <input type="email" value={confirmEmail} required onChange={handleConfirmEmailChange} />
         </div>
-        <button type="button" className='m-4 p-3 rounded' onClick={handleCheckout}>
+        <button type="button" className="m-4 p-3 rounded" onClick={handleCheckout}>
           Realizar Compra
         </button>
       </form>

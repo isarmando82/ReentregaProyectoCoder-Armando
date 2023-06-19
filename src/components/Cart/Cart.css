@@ -7,12 +7,11 @@
     display: flex;
     justify-content: center;
     margin: 100px;
-    color: brown;
     }
 
 .b {
     display: flex;
-    justify-content: space-around;    
+    justify-content:space-around;    
 }
 
 .m {
@@ -24,3 +23,4 @@
 .l {
     border-radius: 15px;
 }
+
