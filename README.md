@@ -1,4 +1,4 @@
-﻿# Heading Reentrega Proyecto Final React - Armando Ismael
+﻿# Reentrega Proyecto Final React - Armando Ismael
 El presente proyecto está hecho en base a lo dado en las clases de CoderHouse dictadas por el profesor Pablo Moraga, el material complementario de google drive, los pps y mucho buscar en la red tanto googlear, visitar stackflow, videos de youtube y el material del MDN de Firefox, entres otros.
 Si bien tuve un muy buen comienzo me encontré con problemas al implementar Firebase en el proyecto, pero gracias a estar sentado aprendiendo y la ayuda de los tutores de coderASK logro encontrar tanto la problemática como las vueltas de tuerca que deseaba darle al proyecto que no deja de ser un E-COMMERCE.
 La reentrega se encuentra alojada en: [ReentregaProyectoReact-Armando](https://reentrega-proyecto-coder-armando.vercel.app/) 
@@ -31,8 +31,10 @@ Se utilizan las dadas a lo largo de la cursada y por una cuestión de estilo se 
 ## Notas
 
 
- - El carrito esta accesible en todo momento ya que esta en el Navbar y se puede clickear y acceder al mismo en cualquier momento. Desde alli mismo se puede ir a la opción de compra cuando el carrito está vacío, vaciar el carrito en su totalidad o por elemento (con un botón con una cruz color verde generado para el caso). Los items comprados NO se pueden repetir, es decir se debe sacar el mismo y realizar una compra por la cantidad solicitada (se da un aviso de tostify), hallé prudente hacerlo de dicha manera para que el usuario/cliente no comuta error al realizar la compra. 
+ - El carrito esta accesible en todo momento ya que está en el Navbar y se puede clickear y acceder al mismo en cualquier momento. Desde allí mismo se puede ir a la opción de compra cuando el carrito está vacío, vaciar el carrito en su totalidad o por elemento (con un botón con una cruz color verde generado para el caso). Los items comprados NO se pueden repetir, es decir se debe sacar el mismo y realizar una compra por la cantidad solicitada (se da un aviso de tostify), hallé prudente hacerlo de dicha manera para que el usuario/cliente no cometa error al realizar la compra. 
  - También desde el carrito se hace el CheckOut lo que implica dos cosas: Que se genere el elemento ORDERS en firebase (si no existía) y se registren todos los datos de la compra. Y que a través de un SweetAlert se haga saber al cliente el numero de Orden de su compra. Luego de ello se vuelve a la pagina de comprar productos nuevamente.
+ - El formulario de CheckOut se valida de diferentes formas y con SweetAlerts2 + toasts se busca que se ingresen los datos correctos.
+ - Para la reentrega se hace responsive el proyecto y se agregan pequeñas mejoras.
  - Se incluye un archivo .gif mostrando la funcionalidad del proyecto.
  
    Ismael Armando 
