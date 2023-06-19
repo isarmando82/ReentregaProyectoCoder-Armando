@@ -24,12 +24,17 @@ const Cart = () => {
     );
   }
 
+  const formattedTotal = total.toLocaleString("es", {
+    useGrouping: true,
+    minimumFractionDigits: 2,
+  }).replace(".", ",");
+
   return (
     <div>
       {cart.map((p) => (
         <CartItem key={p.id} {...p} />
       ))}
-      <h3 className="m-4">Total: ${total}</h3>
+      <h3 className="m-4">Total: ${formattedTotal}</h3>
       <div className="d-flex justify-content-center">
         <button className="m-4 p-3 rounded">
           <Link to="/" className="nn">
