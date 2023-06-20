@@ -9,7 +9,7 @@ const Cart = () => {
   if (totalQuantity === 0) {
     return (
       <div className="text-center">
-        <h1 className="m-4 cent">No hay items en el carrito</h1>
+        <h1 className="m-4">No hay items en el carrito</h1>
         <div className="d-flex justify-content-center">
           <button className="rounded m-4 p-3">
             <Link to="/" className="nn">
