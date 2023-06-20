@@ -35,6 +35,7 @@ Se utilizan las dadas a lo largo de la cursada y por una cuestión de estilo se 
  - También desde el carrito se hace el CheckOut lo que implica dos cosas: Que se genere el elemento ORDERS en firebase (si no existía) y se registren todos los datos de la compra. Y que a través de un SweetAlert se haga saber al cliente el numero de Orden de su compra. Luego de ello se vuelve a la pagina de comprar productos nuevamente.
  - El formulario de CheckOut se valida de diferentes formas y con SweetAlerts2 + toasts se busca que se ingresen los datos correctos.
  - Para la reentrega se hace responsive el proyecto y se agregan pequeñas mejoras.
+ - Se cambia a sistema centesimal con comas (,) y decimal con puntos (.) dado que se detecta un error al realizar los cálculos.
  - Se incluye un archivo .gif mostrando la funcionalidad del proyecto.
  
    Ismael Armando 
